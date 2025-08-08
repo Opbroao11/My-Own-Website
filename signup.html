@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Minechosting — Sign Up</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page auth signup">
+  <header class="site-header">
+    <div class="logo">Minechosting</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="install.html">Installation</a>
+      <a href="store.html">Store</a>
+      <a href="dashboard.html" id="nav-dashboard">Dashboard</a>
+      <a href="login.html" id="nav-login">Login</a>
+      <a href="signup.html" id="nav-signup">Sign Up</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card auth-card">
+      <h2>Create account</h2>
+      <form id="signup-form">
+        <label>Email</label>
+        <input type="email" id="signup-email" required>
+        <label>Password</label>
+        <input type="password" id="signup-password" required>
+        <button class="btn" id="signup-btn" type="submit">Create account</button>
+      </form>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+      <div id="signup-msg" class="msg"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© Minechosting — Demo</small>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
