@@ -1,0 +1,44 @@
+/* Basic modern styling for Minechosting revamp */
+:root{
+  --bg1: #0f1724;
+  --bg2: #1a2330;
+  --accent: #00aaff;
+  --glass: rgba(255,255,255,0.04);
+  --card: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#e6eef8;background:linear-gradient(180deg,var(--bg1),var(--bg2));min-height:100vh}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:var(--glass);backdrop-filter:blur(6px);position:sticky;top:0;z-index:20}
+.logo{font-weight:800;font-size:20px;color:var(--accent)}
+.nav a{color:#dbefff;text-decoration:none;margin-left:14px;padding:8px 12px;border-radius:8px;transition:all .25s}
+.nav a:hover{background:rgba(255,255,255,0.03);transform:translateY(-2px)}
+.container{max-width:1100px;margin:30px auto;padding:0 18px}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);margin-bottom:18px;overflow:hidden}
+.hero{padding:40px;text-align:center}
+.hero h1{font-size:32px;margin:0 0 6px}
+.lead{opacity:.9;margin-bottom:12px}
+.cta .btn{margin:6px}
+.btn{background:var(--accent);color:#042028;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.05);color:#dbefff}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
+.big{padding:24px}
+.terminal{background:#000;border-radius:8px;padding:12px;color:#6ef08a;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;font-size:14px;line-height:1.6;max-height:420px;overflow:auto}
+.note{color:#a5b9c9;margin-top:10px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:16px}
+.product{padding:16px;text-align:center}
+.fade-in{opacity:0;transform:translateY(10px);animation:fadeUp .6s forwards}
+.delay-1{animation-delay:.12s}.delay-2{animation-delay:.24s}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+.auth-card{max-width:420px;margin:20px auto;padding:22px}
+.auth-card label{display:block;margin-top:10px;font-size:13px;color:#bcd7f0}
+.auth-card input{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef8}
+.msg{margin-top:12px;color:#ffd1d1}
+.site-footer{text-align:center;padding:18px;color:#a9c1d8;margin-top:30px}
+
+/* small screens */
+@media(max-width:700px){
+  .nav{display:none}
+  .logo{font-size:18px}
+  .hero h1{font-size:24px}
+}
