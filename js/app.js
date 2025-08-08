@@ -115,4 +115,13 @@ if(location.pathname.endsWith('dashboard.html')){
       }
     }
   }, 800);
+  // On login success
+localStorage.setItem('loggedIn', 'true');
+
+// On page load
+if (localStorage.getItem('loggedIn') === 'true') {
+  // User is logged in, show dashboard or hide login form
+} else {
+  // Show login form
+}  
 }
