@@ -4,10 +4,13 @@
 // Create a Firebase project at https://console.firebase.google.com/ then add a Web App.
 // Copy the config (apiKey, authDomain, projectId ...).
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY_HERE",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  // other keys...
+  apiKey: "AIzaSyDAy94yKk5tnTENAefWX6IdGOeYBK1v7mk",
+  authDomain: "login-up-450f2.firebaseapp.com",
+  projectId: "login-up-450f2",
+  storageBucket: "login-up-450f2.firebasestorage.app",
+  messagingSenderId: "438597832719",
+  appId: "1:438597832719:web:2927eb32613d6b7364137a",
+  measurementId: "G-TQYRGK32DH"
 };
 
 // ---- Initialize Firebase (compat mode) ----
